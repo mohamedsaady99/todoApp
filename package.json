@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mohamedsaady99.github.io/todoApp",
   "name": "todo",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.18.3",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
@@ -16,6 +18,8 @@
     "swiper": "^7.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
